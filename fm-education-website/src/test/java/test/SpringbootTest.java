@@ -107,6 +107,7 @@ public class SpringbootTest {
 	   String acode = defaultKaptcha.createText();
 	   BufferedImage image = defaultKaptcha.createImage(acode);
 	   System.out.println("bbb");
+	   System.out.println("aaa") ;
 
 
    }
