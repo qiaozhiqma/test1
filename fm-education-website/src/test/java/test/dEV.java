@@ -10,5 +10,5 @@ import java.sql.SQLOutput;
  * @version: DEV$
  */
 public class dEV {
-    SQLOutputj;
+
 }
