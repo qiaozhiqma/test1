@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>前端展示</title>
+</head>
+<script src="/static/js/jquery-2.2.3.min.js"></script>
+<body>
+<!--<a th:href="@{/admin/login}">
+    点我跳转到后台
+</a>-->
+
+<div>
+    <img alt="验证码" onclick="this.src='http://localhost:8080/verifica/generate?key='+new Date()*1" src="http://localhost:8080/verifica/generate"/>
+</div>
+<h2>欢迎注册</h2>
+<form action="/verifyCode" method="post">
+    <input type="text" name="verifyCode"/>
+    <input type="submit" value="提交"/>
+</form>
+<div>
+    热部署成功
+    再一次热部署
+</div>
+</body>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?76968355bd5f8c263c65a1ad6dca8fa8";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    $(function () {
+        alert("aaa");
+        /*$.ajax({
+            url:"http://localhost:8080/verifica/generate",
+            type:"post",
+            data:{},
+            success:function (result) {
+                console.log(result);
+            },
+            error:function (error) {
+                console.log(error)
+            }
+        });*/
+    })
+</script>
+</html>
